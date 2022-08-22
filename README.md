@@ -1,7 +1,10 @@
 # All Japanese All The Time
 Esta es una compilación de recursos y guías de mi setup personal para AJATT.
 
-## Diccionarios y Vocabulario
+## Inmersión y Diccionarios
+### Recursos para inmersión
+- Extrae el texto de Visual Novels: [Textractor](https://github.com/Artikash/Textractor)
+- VPN para desbloquear contenido de Japón: [VPNGate](https://www.vpngate.net/en/download.aspx)
 ### qolibri EPWING dictionary viewer
 Descarga qolibri para ver la definición de palabras en múltiples diccionarios: [qolibri](https://github.com/ludios/qolibri) 
 ### EPWING
