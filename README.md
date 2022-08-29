@@ -1,5 +1,6 @@
 # All Japanese All The Time
 Esta es una compilación de recursos y guías de mi setup personal para AJATT.
+##Anki Addons mpv ytdlp
 
 ## Inmersión y Diccionarios
 ### Recursos para inmersión
