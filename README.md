@@ -1,6 +1,12 @@
 # All Japanese All The Time
 Esta es una compilación de recursos y guías de mi setup personal para AJATT.
-##Anki Addons mpv ytdlp
+## Anki Addons
+- [AJT Flexible Grading](https://ankiweb.net/shared/info/1715096333)
+- [AJT Furigana](https://ankiweb.net/shared/info/1344485230)
+- [Review Heatmap](https://ankiweb.net/shared/info/1771074083)
+- [Paste Images As WebP](https://ankiweb.net/shared/info/1151815987)
+- [Edit Field During Review Cloze](https://ankiweb.net/shared/info/385888438)
+- [Add Hyperlink](https://ankiweb.net/shared/info/318752047)
 
 ## Inmersión y Diccionarios
 ### Recursos para inmersión
