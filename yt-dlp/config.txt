@@ -1,0 +1,2 @@
+--output 'C:\Users\Rotvie\Downloads\%(title)s.%(ext)s'
+-f bestvideo+bestaudio/best
