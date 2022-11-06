@@ -1,5 +1,10 @@
-# All Japanese All The Time
-Esta es una compilación de recursos y guías de mi setup personal para AJATT.
+# All Japanese All The Time (AJATT)
+## What is AJATT?
+AJATT is a language learning method to achieve fluency through immersion, you can read more about it here:
+- [Tatsumoto ToC](https://tatsumoto.neocities.org/blog/table-of-contents.html)
+- [AJATT ToC](http://www.alljapaneseallthetime.com/blog/all-japanese-all-the-time-ajatt-how-to-learn-japanese-on-your-own-having-fun-and-to-fluency/)
+- [Roadmap|Refold](https://refold.la/roadmap)
+
 ## Anki Addons
 - [AJT Flexible Grading](https://ankiweb.net/shared/info/1715096333)
 - [AJT Pitch Accent](https://ankiweb.net/shared/info/1225470483)
@@ -11,8 +16,8 @@ Esta es una compilación de recursos y guías de mi setup personal para AJATT.
 
 ## Inmersión y Diccionarios
 ### Recursos para inmersión
-- Extrae el texto de Visual Novels: [Textractor](https://github.com/Artikash/Textractor)
-- VPN para desbloquear contenido de Japón: [VPNGate](https://www.vpngate.net/en/download.aspx)
+- Extract text from Visual Novels: [Textractor](https://github.com/Artikash/Textractor)
+- VPN to unlock Japanese Content: [VPNGate](https://www.vpngate.net/en/download.aspx)
 ### qolibri EPWING dictionary viewer
 Descarga qolibri para ver la definición de palabras en múltiples diccionarios: [qolibri](https://github.com/ludios/qolibri) 
 ### EPWING
