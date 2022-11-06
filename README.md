@@ -2,6 +2,7 @@
 Esta es una compilación de recursos y guías de mi setup personal para AJATT.
 ## Anki Addons
 - [AJT Flexible Grading](https://ankiweb.net/shared/info/1715096333)
+- [AJT Pitch Accent](https://ankiweb.net/shared/info/1225470483)
 - [AJT Furigana](https://ankiweb.net/shared/info/1344485230)
 - [Review Heatmap](https://ankiweb.net/shared/info/1771074083)
 - [Paste Images As WebP](https://ankiweb.net/shared/info/1151815987)
