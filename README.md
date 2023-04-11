@@ -14,16 +14,16 @@ AJATT is a language learning method to achieve fluency through immersion, you ca
 - [Edit Field During Review Cloze](https://ankiweb.net/shared/info/385888438)
 - [Add Hyperlink](https://ankiweb.net/shared/info/318752047)
 
-## Inmersión y Diccionarios
-### Recursos para inmersión
+## Immersion
+### Tools for Immersion
 - Extract text from Visual Novels: [Textractor](https://github.com/Artikash/Textractor)
 - VPN to unlock Japanese Content: [VPNGate](https://www.vpngate.net/en/download.aspx)
 ### qolibri EPWING dictionary viewer
-Descarga qolibri para ver la definición de palabras en múltiples diccionarios: [qolibri](https://github.com/ludios/qolibri) 
+Use qolibri to search for word definitions in multiple dictionaries at the same time: [qolibri](https://github.com/ludios/qolibri) 
 ### EPWING
 Son un formato de archivo para diccionarios, este formato es el que qolibri acepta. Acá algunos links:
-- Diccionarios JP-JP: [Japanese_Dictionaries](https://www.mediafire.com/folder/ldyklp3362pgg/Japanese_Dictionaries)<br/>
-- Diccionario NHK Pitch Accent: [NHK_Pitch_Accent](https://www.mediafire.com/file/sxmpse8n92c9oxg/NHKACT.zip)
+- Dictionaries JP-JP: [Japanese_Dictionaries](https://www.mediafire.com/folder/ldyklp3362pgg/Japanese_Dictionaries)<br/>
+- Dictionaries NHK Pitch Accent: [NHK_Pitch_Accent](https://www.mediafire.com/file/sxmpse8n92c9oxg/NHKACT.zip)
 
-## Inmersión pasiva y condensación
+## Passive Immersion
 Condensa el audio de vídeos para aumentar la densidad de inmersión pasiva: [subs2cia](https://github.com/dxing97/subs2cia)
