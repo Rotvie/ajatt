@@ -7,7 +7,7 @@
 # --sub-format srt 
 # --convert-subs srt 
 -P 'C:\Users\Rotvie\Downloads\' 
--o "%(title).40s.%(ext)s" 
+-o '%(title)s.%(ext)s' 
 --windows-filenames 
 --write-subs 
 --playlist-reverse 
