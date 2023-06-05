@@ -40,8 +40,8 @@ Here are some downloadable EPWING dictionaries for qolibri:
 To add an extra layer of convenience, I've created a custom configuration file in the `Vimium` folder with my personal key mappings, mainly for quick access to various search functions. You can import these mappings into your own Vimium setup. This is a short overview of them:
 
 ```
-gi: https://www.google.com/search?q=%s&tbm=isch&authuser=0
-ya: https://yandex.ru/search/?lr=84501&text=%s
+gi: https://www.google.com/search?q=%s&tbm=isch
+ya: https://yandex.ru/search/?text=%s
 yh: https://search.yahoo.co.jp/search?p=%s
 y:  https://www.youtube.com/results?search_query=%s
 w: https://ja.wikipedia.org/wiki/%s
