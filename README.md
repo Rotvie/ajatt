@@ -1,3 +1,16 @@
+Table of Contents
+=================
+
+* [All Japanese All The Time (AJATT)](#all-japanese-all-the-time-ajatt)
+   * [What is AJATT?](#what-is-ajatt)
+   * [My tools](#my-tools)
+      * [Anki](#anki)
+      * [MPV Media Player](#mpv-media-player)
+      * [Dictionaries](#dictionaries)
+         * [qolibri EPWING dictionary viewer](#qolibri-epwing-dictionary-viewer)
+      * [Vimium](#vimium)
+      * [Miscellaneous Tools](#miscellaneous-tools)
+
 # All Japanese All The Time (AJATT)
 ## What is AJATT?
 AJATT is a language learning approach that encourages full immersion in Japanese. It involves surrounding yourself with the language in everyday life, sentence mining for effective vocabulary acquisition, and using timeboxing for focused study periods. Customizable to individual needs, AJATT commonly uses resources like Anki flashcards, Japanese media, and books. Here are a few references:
