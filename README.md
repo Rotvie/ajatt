@@ -18,6 +18,14 @@ Here are some of the Anki Addons I use:
 - [Edit Field During Review Cloze](https://ankiweb.net/shared/info/385888438)
 - [Add Hyperlink](https://ankiweb.net/shared/info/318752047)
 
+### MPV Media Player
+
+[MPV](https://mpv.io/) is a powerful, open-source media player appreciated for its cross-platform capabilities, customization, and scripting options. With its light design and wide compatibility with various media formats, it is a favored choice for many.
+
+One of the notable features of MPV is its seamless integration with [yt-dlp](https://github.com/yt-dlp/yt-dlp), an enhanced fork of youtube-dl. This integration allows users to directly stream videos from platforms like YouTube as well as download content.
+
+For language learning, MPV's scripting capacity is a valuable asset. By incorporating Lua scripts, you can tailor MPV to boost your learning experience with additional functionalities. The `mpv` folder in this repository includes the Lua scripts that I utilize for this purpose.
+
 ### Dictionaries
 Learning Japanese becomes significantly easier with the help of dictionaries, especially JP-JP ones.
 
@@ -26,6 +34,8 @@ Use [qolibri](https://github.com/ludios/qolibri) to search multiple dictionaries
 Here are some downloadable EPWING dictionaries for qolibri:
 - [Japanese_Dictionaries](https://www.mediafire.com/folder/ldyklp3362pgg/Japanese_Dictionaries)
 - [NHK_Pitch_Accent](https://www.mediafire.com/file/sxmpse8n92c9oxg/NHKACT.zip)
+
+
 
 ### Miscellaneous Tools
 In addition to dictionaries, some other tools can enhance your Japanese learning experience. Here are some of them:
