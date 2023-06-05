@@ -1,6 +1,6 @@
 # All Japanese All The Time (AJATT)
 ## What is AJATT?
-AJATT is a language learning method to achieve fluency through immersion, you can read more about it here:
+AJATT is a language learning approach that encourages full immersion in Japanese. It involves surrounding yourself with the language in everyday life, sentence mining for effective vocabulary acquisition, and using timeboxing for focused study periods. Customizable to individual needs, AJATT commonly uses resources like Anki flashcards, Japanese media, and books.
 - [Tatsumoto ToC](https://tatsumoto.neocities.org/blog/table-of-contents.html)
 - [AJATT ToC](http://www.alljapaneseallthetime.com/blog/all-japanese-all-the-time-ajatt-how-to-learn-japanese-on-your-own-having-fun-and-to-fluency/)
 - [Roadmap|Refold](https://refold.la/roadmap)
@@ -24,8 +24,8 @@ Learning Japanese becomes significantly easier with the help of dictionaries, es
 #### qolibri EPWING dictionary viewer
 Use [qolibri](https://github.com/ludios/qolibri) to search multiple dictionaries simultaneously. It requires dictionaries in EPWING format.
 Here are some downloadable EPWING dictionaries for qolibri:
-- JP-JP Dictionaries: [Japanese_Dictionaries](https://www.mediafire.com/folder/ldyklp3362pgg/Japanese_Dictionaries)
-- NHK Pitch Accent Dictionaries: [NHK_Pitch_Accent](https://www.mediafire.com/file/sxmpse8n92c9oxg/NHKACT.zip)
+- [Japanese_Dictionaries](https://www.mediafire.com/folder/ldyklp3362pgg/Japanese_Dictionaries)
+- [NHK_Pitch_Accent](https://www.mediafire.com/file/sxmpse8n92c9oxg/NHKACT.zip)
 
 ### Miscellaneous Tools
 In addition to dictionaries, some other tools can enhance your Japanese learning experience. Here are some of them:
