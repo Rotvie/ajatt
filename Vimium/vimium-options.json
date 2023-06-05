@@ -1,5 +1,5 @@
 {
-  "settingsVersion": "1.67",
+  "settingsVersion": "1.67.6",
   "exclusionRules": [],
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
@@ -15,7 +15,7 @@
   "scrollStepSize": 60,
   "smoothScroll": true,
   "grabBackFocus": true,
-  "searchEngines": "gi: https://www.google.com/search?q=%s&tbm=isch&authuser=0\nya: https://yandex.ru/search/?lr=84501&text=%s\nyh: https://search.yahoo.co.jp/search?p=%s\ny:  https://www.youtube.com/results?search_query=%s\nw: https://ja.wikipedia.org/wiki/%s\ngo: https://dictionary.goo.ne.jp/srch/all/%s/m1u\nji:  https://jisho.org/search/%s",
+  "searchEngines": "gi: https://www.google.com/search?q=%s&tbm=isch\nya: https://yandex.ru/search/?text=%s\nyh: https://search.yahoo.co.jp/search?p=%s\ny:  https://www.youtube.com/results?search_query=%s\nw: https://ja.wikipedia.org/wiki/%s\ngo: https://dictionary.goo.ne.jp/srch/all/%s/m1u\nji:  https://jisho.org/search/%s",
   "searchUrl": "https://www.google.com/search?q=",
   "userDefinedLinkHintCss": "/* make insert box small than before */\ndiv.vimiumHUD {\n  width: auto;\n  left: 207px;\n}\n\ndiv.vimiumHUD span#hud-find-input,\ndiv.vimiumHUD span#hud-match-count {\n  color: #f8efe4;\n}\n\ndiv.vimiumHUD .hud-find {\n  background: #3f3f3f;\n  border: 1px solid #3f3f3f;\n}\n\n#vomnibar input {\n  color: #f8efe4;\n  background-color: #3f3f3f;\n  border-color: #3f3f3f;\n}\n\ndiv.vimiumHUD .vimiumHUDSearchArea {\n  background-color: #3f3f3f;\n}\n\ndiv.vimiumHUD .vimiumHUDSearchAreaInner {\n  color: #f8efe4;\n}\n\ndiv > .vimiumHintMarker {\n  /* linkhint boxes */\n  background: -webkit-gradient(\n    linear,\n    left top,\n    left bottom,\n    color-stop(0%, #fff785),\n    color-stop(100%, #ffc542)\n  );\n  border: 1px solid #e3be23;\n}\n\ndiv > .vimiumHintMarker span {\n  /* linkhint text */\n  color: black;\n  font-weight: bold;\n  font-size: 12px;\n}\n\ninput#vomnibarInput.vimiumReset {\n  color: #fff !important;\n  background-color: #111 !important;\n}\n\n#vomnibar {\n  border-color: black;\n  background-color: black;\n}\n\n#vomnibar .vomnibarSearchArea {\n  background-color: #222;\n  border-bottom: #3f3f3f;\n}\n\n#vomnibar ul {\n  background-color: #222;\n}\n\n#vomnibar li {\n  border-bottom: #3f3f3f;\n}\n\n#vomnibar li .vomnibarUrl {\n  color: #eaea99;\n}\n\n#vomnibar li .vomnibarMatch {\n  color: white;\n}\n\n#vomnibar li.vomnibarSelected {\n  background-color: #000000;\n}\n\n#vomnibar li em .vomnibarMatch,\n#vomnibar li .vomnibarTitle .vomnibarMatch {\n  color: white;\n}\n\n#vomnibar li em,\n#vomnibar li .vomnibarTitle {\n  color: #ddd;\n}"
 }
