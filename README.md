@@ -4,10 +4,12 @@
    * [What is AJATT?](#what-is-ajatt)
    * [My tools](#my-tools)
       * [Anki](#anki)
+      * [LLM-assisted Card Formulation](#llm-assisted-card-formulation)
       * [MPV Media Player](#mpv-media-player)
       * [Dictionaries](#dictionaries)
          * [qolibri EPWING dictionary viewer](#qolibri-epwing-dictionary-viewer)
       * [Vimium](#vimium)
+      * [AutoHotkey](#autohotkey)
       * [Miscellaneous Tools](#miscellaneous-tools)
       
 ## What is AJATT?
@@ -17,7 +19,7 @@ AJATT is a language learning approach that encourages full immersion in Japanese
 - [Roadmap|Refold](https://refold.la/roadmap)
 
 ## My tools
-### Anki 
+### Anki
 [Anki](https://apps.ankiweb.net/) is a popular and powerful spaced repetition software (SRS) designed to help users with efficient learning. It allows you to create and manage flashcards on various subjects, enabling the reinforcement of memory through regular and strategically timed reviews.
 
 Here are some of the Anki Addons I use: 
@@ -28,6 +30,16 @@ Here are some of the Anki Addons I use:
 - [Paste Images As WebP](https://ankiweb.net/shared/info/1151815987)
 - [Edit Field During Review Cloze](https://ankiweb.net/shared/info/385888438)
 - [Add Hyperlink](https://ankiweb.net/shared/info/318752047)
+
+### LLM-assisted Card Formulation
+Well-formed cards matter more than the algorithm scheduling them. I use an LLM (Claude, with [AnkiConnect](https://ankiweb.net/shared/info/2055492159)) to formulate and register cards following an explicit policy adapted from Woźniak's [Twenty Rules of Formulating Knowledge](https://www.supermemo.com/en/blog/twenty-rules-of-formulating-knowledge) — with a per-card-type policy table and an i+1 gate for sentence mining (one unknown word per sentence).
+
+- [`card-formulation.md`](card-formulation/card-formulation.md) — the policy: automated gates vs. LLM rewrites vs. user-facing flags, the Japanese exception to atomization, and the per-card-type table.
+- [`claude-card-formulation.prompt.md`](card-formulation/claude-card-formulation.prompt.md) — a ready-to-use prompt that applies the policy; drop it into a Claude project. If the session can read this repo, the prompt alone is enough — Claude reads the policy itself. In a plain chat, paste `card-formulation.md` along with it.
+
+**Setup:** install the [AnkiConnect](https://ankiweb.net/shared/info/2055492159) add-on in Anki, then configure the [Anki MCP server](https://github.com/ankimcp/anki-mcp-server) in your Claude client (Claude Desktop or Claude Code) so the agent can reach Anki's local API — AnkiConnect is the add-on exposing the API, the MCP server is the bridge that gives Claude access to it. Anki must be running.
+
+**Workflow:** capture sentences during immersion into a mining inbox; Claude reads the inbox, applies the policy (i+1 gate, per-card-type atomization, dupe-checking via `canAddNotes`), and registers the cards in the target deck with furigana generated at build time.
 
 ### MPV Media Player
 
@@ -48,7 +60,7 @@ Here are some downloadable EPWING dictionaries for qolibri:
 
 ### Vimium
 [Vimium](https://vimium.github.io/) is a handy extension that brings the efficiency of Vim-style keyboard navigation to your web browsing experience. With Vimium, you can scroll, follow links, navigate through history, and more, all without leaving your keyboard.
-To add an extra layer of convenience, I've created a custom configuration file in the `Vimium` folder with my personal key mappings, mainly for quick access to various search functions. You can import these mappings into your own Vimium setup. This is a short overview of them:
+To add an extra layer of convenience, I've created a custom configuration file in the `vimium` folder with my personal key mappings, mainly for quick access to various search functions. You can import these mappings into your own Vimium setup. This is a short overview of them:
 
 ```
 gi: https://www.google.com/search?q=%s&tbm=isch
@@ -61,6 +73,9 @@ ji:  https://jisho.org/search/%s
 ```
 
 With these shortcuts, you can quickly search Google Images (gi), Yandex (ya), Yahoo Japan (yh), YouTube (y), Japanese Wikipedia (w), Goo dictionary (go), and Jisho dictionary (ji).
+
+### AutoHotkey
+[AutoHotkey](https://www.autohotkey.com/) is a scripting language for automating tasks on Windows. The `autohotkey` folder contains the hotkey scripts I use around immersion: toggling the Japanese IME, sending URLs straight to MPV, quick dictionary lookups in qolibri, and opening a PowerShell window.
 
 ### Miscellaneous Tools
 In addition to dictionaries, some other tools can enhance your Japanese learning experience. Here are some of them:
