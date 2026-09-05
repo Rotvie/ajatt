@@ -1,0 +1,17 @@
+{{#MakeProductionCard}}{{#SentKanji}}
+<div class="wrap">
+    <header class="tagbar">{{Tags}}</header>
+
+    {{#Image}}<div class="images">{{Image}}</div>{{/Image}}
+
+    <div class="sent-center">
+        <div class="jpsentence production" lang="ja">{{furigana:SentFurigana}}</div>
+        <div class="audio">{{VocabAudio}}{{SentAudio}}</div>
+    </div>
+</div>
+
+<div class="src" hidden>
+    <span id="src-pitchnum">{{VocabPitchNum}}</span>
+    <span id="src-kana">{{kana:VocabFurigana}}</span>
+</div>
+{{/SentKanji}}{{/MakeProductionCard}}

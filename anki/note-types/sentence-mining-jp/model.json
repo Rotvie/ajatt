@@ -1,0 +1,26 @@
+{
+  "name": "Sentence Mining JP",
+  "isCloze": false,
+  "sortField": "SentKanji",
+  "fields": [
+    "SentKanji",
+    "SentFurigana",
+    "SentAudio",
+    "VocabKanji",
+    "VocabFurigana",
+    "VocabPitchPattern",
+    "VocabPitchNum",
+    "VocabDef",
+    "VocabAudio",
+    "Image",
+    "Notes",
+    "MakeProductionCard",
+    "Source"
+  ],
+  "styling": "styling.css",
+  "sharedScript": "shared.js",
+  "templates": [
+    { "name": "Recognition", "front": "recognition-front.html", "back": "recognition-back.html" },
+    { "name": "Production",  "front": "production-front.html",  "back": "production-back.html"  }
+  ]
+}

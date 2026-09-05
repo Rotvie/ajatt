@@ -1,7 +1,15 @@
 # macOS
 .DS_Store
-.AppleDouble
-.LSOverride
+._*
 
-# Claude Code local settings
-.claude/
+# Claude Code: local settings ignored, project skills tracked
+.claude/*
+!.claude/skills/
+
+# Python
+__pycache__/
+*.pyc
+
+# fetched data
+anki/data/*
+!anki/data/README.md
