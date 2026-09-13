@@ -40,8 +40,8 @@ repo do in bulk afterwards:
 1. Install Anki, then AnkiConnect at minimum (Tools → Add-ons → Get Add-ons, paste the
    code from the link). Restart Anki.
 2. Create the note type — see [note-types/sentence-mining-jp/](note-types/sentence-mining-jp/).
-3. Install [mpvacious](https://github.com/Ajatt-Tools/mpvacious) in mpv and point it at that
-   note type, so `Ctrl+E` during playback creates a card.
+3. Install [mpvacious](https://github.com/Ajatt-Tools/mpvacious) (`sh mpv/install.sh` does it
+   and points it at this note type) and set up [Yomitan](../yomitan/) to fill the word fields.
 4. Read [`reference/conventions.md`](reference/conventions.md) before writing any script
    that edits notes in bulk.
 

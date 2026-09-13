@@ -12,7 +12,8 @@ resources for the Anki collection they feed. Read this before changing anything.
 | `anki/scripts/` | Plain Python over AnkiConnect. `snapshot.py` first, always |
 | `.claude/skills/sentence-mining-jp/` | Claude Code skill; a pointer into `anki/`, loads automatically inside this repo |
 | `anki/card-formulation/` | Policy for what makes a good card. Apply it before creating cards |
-| `mpv/`, `yt-dlp/` | Tool configs. Plain dotfiles |
+| `mpv/`, `yt-dlp/` | Tool configs. Plain dotfiles. `mpv/script-opts/subs2srs.conf` maps mpvacious onto the note type's fields |
+| `yomitan/` | Browser-side setup, done by hand: dictionaries and the Anki field mapping. Must stay consistent with `subs2srs.conf` — Yomitan leaves `SentAudio`, `Image`, `Source` empty for mpvacious |
 
 ## If you are adding cards
 

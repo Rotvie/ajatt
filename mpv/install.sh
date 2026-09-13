@@ -12,11 +12,16 @@
 #   autoload   mpv-player/mpv           master           LGPL-2.1+
 #   recent     hacel/recent             master           (no licence stated)
 #   bookmarker NurioHin/mpv-bookmarker  master           (no licence stated)
+#   mpvacious  Ajatt-Tools/mpvacious    v26.7.28.0       GPL-3.0
 #
 # uosc is pinned because 5.x changed its layout and this config is untested
 # against it. Bump the version below when you've tried it.
+#
+# mpvacious is pinned to the release this config was checked against: its
+# subs2srs.conf keys and key bindings change between releases.
 set -eu
 UOSC_VERSION=4.6.0
+MPVACIOUS_VERSION=v26.7.28.0
 HERE=$(cd "$(dirname "$0")" && pwd)
 DEST=${MPV_HOME:-$HOME/.config/mpv}
 RAW=https://raw.githubusercontent.com
@@ -42,5 +47,10 @@ do
   echo "fetching $1"
   curl -sSL -o "$DEST/$1" "$RAW/$2"
 done
+
+echo "fetching mpvacious $MPVACIOUS_VERSION"
+curl -sSL -o "$TMP/mpvacious.zip" "https://github.com/Ajatt-Tools/mpvacious/releases/download/$MPVACIOUS_VERSION/mpvacious_$MPVACIOUS_VERSION.zip"
+rm -rf "$DEST/scripts/mpvacious"
+unzip -qo "$TMP/mpvacious.zip" -d "$DEST/scripts"   # ships scripts/mpvacious/
 
 echo "done -> $DEST"

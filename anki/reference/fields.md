@@ -6,14 +6,14 @@
 |---|---|
 | `SentKanji` | The sentence as it should be **read**: plain Japanese, **no ruby**, no MeCab token spaces. Target word wrapped in `<b>`. Shown on the card front. |
 | `SentFurigana` | Same sentence **with** ruby in `漢字[かな]` notation, space-delimited between words. Shown on the back. |
-| `SentAudio` | `[sound:xxx.mp3]` |
+| `SentAudio` | `[sound:xxx.mp3]`; cards mined with mpvacious get `.ogg` (opus) |
 | `VocabKanji` | Target word in **dictionary form**, plain text: no ruby, no HTML, no spaces. Kana-only words are stored as kana (`あっさり`, `パンク`). Drives the `【…】` display and every footer lookup link. |
 | `VocabFurigana` | Same word with ruby (`目指[めざ]す`). Kana-only words repeat the word unchanged. |
 | `VocabPitchPattern` | Pitch contour as HTML: `ム<span style="text-decoration:overline;">ク</span>ꜜイ`. **Semantic — never strip these tags.** |
 | `VocabPitchNum` | Accent number (`0`,`1`,`2`…). Drives the front-side colouring script. |
 | `VocabDef` | Monolingual Japanese definition. Mostly 大辞林-style; some entries from 大辞泉, goo辞書 or Weblio. |
 | `VocabAudio` | `[sound:xxx.mp3]` |
-| `Image` | `<img src="xxx.webp">` |
+| `Image` | `<img src="xxx.webp">`; cards mined with mpvacious get `<img alt="snapshot" src="xxx.avif">` |
 | `Notes` | Free text |
 | `MakeProductionCard` | Gate for the Production card type. Empty by default; setting it generates a second card for that note. |
 | `Source` | Where the sentence came from. Optional. |

@@ -18,6 +18,7 @@ Background: [My journey learning Japanese](https://rotvie.github.io/blog/2025/my
 |---|---|
 | [`yt-dlp/`](yt-dlp/) | Download material with Japanese subtitles intact |
 | [`mpv/`](mpv/) | Watch it, and mine cards straight out of playback |
+| [`yomitan/`](yomitan/) | Look words up — and fill word, definition, pitch on the card |
 | [`anki/`](anki/) | Review — the note type, what makes a good card, formatting reference, and scripts for editing the collection safely |
 
 Each folder has its own README with install paths and what the settings do.
@@ -27,16 +28,18 @@ Each folder has its own README with install paths and what the settings do.
 ```
    watch / read            mine                  review
    ──────────────  ───────────────────────  ──────────────
-   mpv + subs      mpvacious → Anki card    daily reps
-   yt-dlp                  ↑
+   mpv + subs      Yomitan → Anki card      daily reps
+   yt-dlp          mpvacious → audio+image
+                           ↑
                     card-formulation policy
 ```
 
 1. **Get material** — `yt-dlp` with subtitles, or stream straight into mpv.
-2. **Immerse** — watch in mpv. Look words up as you go.
-3. **Mine** — when a sentence has exactly *one* unknown word, `Ctrl+E` in
-   [mpvacious](https://github.com/Ajatt-Tools/mpvacious) turns it into an Anki card with
-   audio, screenshot and context.
+2. **Immerse** — watch in mpv. Subtitles are copied to the clipboard, where
+   [Yomitan](yomitan/) looks them up.
+3. **Mine** — when a sentence has exactly *one* unknown word, add it from Yomitan;
+   [mpvacious](https://github.com/Ajatt-Tools/mpvacious) attaches the sentence audio,
+   screenshot and source a couple of seconds later.
 4. **Review** — daily, in Anki.
 
 ![The back of a card: furigana, pitch contour, accent number, definition, the frame mpvacious captured, and dictionary links](anki/note-types/sentence-mining-jp/screenshots/card-night.png)
@@ -58,6 +61,7 @@ fields, and fixing that by hand doesn't scale.
 | [mpv](https://mpv.io/) | `brew install mpv` | Watching and mining |
 | [yt-dlp](https://github.com/yt-dlp/yt-dlp) | `brew install yt-dlp` | Downloading material |
 | [Anki](https://apps.ankiweb.net/) | `brew install --cask anki` | Reviews |
+| [Yomitan](https://github.com/yomidevs/yomitan) | Chrome / Firefox extension (no Safari) | Lookups, and the word half of each card |
 | Python 3 | preinstalled | The note-type installer |
 
 ## Quick start
@@ -67,7 +71,7 @@ git clone https://github.com/Rotvie/ajatt
 cd ajatt
 
 # ---- mpv ----
-sh mpv/install.sh                     # config to ~/.config/mpv, fetches the scripts
+sh mpv/install.sh                     # config to ~/.config/mpv, fetches scripts incl. mpvacious
 
 # ---- yt-dlp ----
 mkdir -p ~/.config/yt-dlp
@@ -80,8 +84,9 @@ python3 anki/note-types/sentence-mining-jp/install.py           # dry run
 python3 anki/note-types/sentence-mining-jp/install.py --apply
 ```
 
-Then install [mpvacious](https://github.com/Ajatt-Tools/mpvacious) in mpv and point it at
-the `Sentence Mining JP` note type.
+Then set up Yomitan by hand — dictionaries, clipboard monitor, Anki field mapping — per
+[`yomitan/`](yomitan/). mpvacious is already pointed at the note type by
+`mpv/script-opts/subs2srs.conf`.
 
 ### Check it worked
 
@@ -92,7 +97,8 @@ curl -s localhost:8765 -d '{"action":"version","version":6}'   # AnkiConnect ans
 ```
 
 In Anki, `Tools → Manage Note Types` should list **Sentence Mining JP** with 13 fields and
-two card types. Playing a video in mpv and pressing `Ctrl+E` should create a card.
+two card types. Playing a video in mpv and pressing `Ctrl+n` should create a card; adding a
+word from Yomitan's search page should get audio and a screenshot attached within ~2 s.
 
 ## What is AJATT?
 
