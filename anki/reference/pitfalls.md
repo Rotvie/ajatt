@@ -30,6 +30,10 @@ Failure modes seen in a real mined collection. None are hypothetical.
 - **Verifying against an old snapshot flags earlier passes.** Scope each comparison to the
   fields the current pass writes.
 - **Date-named snapshots overwrite each other.** Timestamp to the second.
+- **Anki renders `{{…}}` inside `shared.js` too, comments included.** A comment naming
+  `{{FrontSide}}` got the whole front pasted into the script and broke every card back.
+  Never write double braces in the script; render a card and check for JS errors after
+  every template install.
 
 Every one of these was caught by the snapshot-then-dry-run habit in the README, not by
 careful coding. When a rule cannot decide, skip and report rather than guess.

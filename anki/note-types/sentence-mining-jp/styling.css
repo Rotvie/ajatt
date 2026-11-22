@@ -203,11 +203,13 @@ footer > a:last-child:after { content: ""; width: 0; margin: 0; }
 
 .production b, .production strong { visibility: hidden; }
 
-.strokeorder {
+/* Meaning cue under the gapped sentence */
+.hint {
+    margin-top: 14px;
+    max-width: 36em;
+    font-size: 20px;
+    color: var(--muted);
     text-align: center;
-    font-size: 150px;
-    line-height: 1.1;
-    font-family: KanjiStrokeOrders, "Noto Serif CJK JP", serif;
 }
 
 /* ---- Night mode ------------------------------------------- */
@@ -223,16 +225,14 @@ footer > a:last-child:after { content: ""; width: 0; margin: 0; }
 .nightMode .replaybutton span svg { fill: #2f2f31; background: #ffffff; }
 .nightMode .jpsentence b, .nightMode .jpsentence strong { color: gray; }
 .nightMode .images img { filter: sepia(0%); }
-.nightMode .source { color: #999999; }
+.nightMode .source, .nightMode .hint { color: #999999; }
 
 /* ---- Mobile ----------------------------------------------- */
 
 @media screen and (max-width: 600px) {
     .card { font-size: 20px; }
     .jpsentence { font-size: 26px; line-height: 1.9; }
-    /* KanjiStrokeOrders is not loaded below 900px, so this renders as
-       an ordinary kanji; keep it proportionate. */
-    .strokeorder { font-size: 96px; }
+    .hint { font-size: 17px; }
     .images { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
     .images img { max-height: 50vh; }
     footer { font-size: 15px; }

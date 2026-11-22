@@ -46,8 +46,9 @@ Three things that look like markup and are not:
 Adding or removing a note-type **field** is a schema change that forces a one-way full sync
 to AnkiWeb. Never do it without being asked.
 
-After a template change, card count must still equal note count — otherwise the
-`{{#MakeProductionCard}}` gate broke and Anki generated a second card per note.
+A template change must not change the card count (notes + notes with `MakeProductionCard`
+set) — otherwise the `{{#MakeProductionCard}}` gate broke and Anki generated a second card
+per note.
 
 ## If you are editing configs
 

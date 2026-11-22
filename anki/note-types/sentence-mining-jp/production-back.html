@@ -1,18 +1,21 @@
-<div class="wrap">
-    <div class="answer-side">{{FrontSide}}</div>
+<div class="wrap answer-side">
+    <header class="tagbar">{{Tags}}</header>
 
-    <hr>
+    {{#Image}}<div class="images">{{Image}}</div>{{/Image}}
 
-    {{#VocabKanji}}<div class="strokeorder">{{text:kanji:VocabKanji}}</div>{{/VocabKanji}}
+    <div class="sent-center">
+        <div class="jpsentence" lang="ja">{{furigana:SentFurigana}}</div>
+    </div>
 
     <div class="vocab">
+        <span class="audio">{{VocabAudio}}{{SentAudio}}</span>
         {{#VocabPitchPattern}}<span class="pitchpattern">{{VocabPitchPattern}}</span>{{/VocabPitchPattern}}
         {{^VocabPitchPattern}}<span class="pitchpattern">{{text:kana:VocabFurigana}}</span>{{/VocabPitchPattern}}
         {{#VocabPitchNum}}<span class="tag" id="pitch-chip">{{VocabPitchNum}}</span>{{/VocabPitchNum}}
         {{#VocabKanji}}<span class="headword">【{{text:kanji:VocabKanji}}】</span>{{/VocabKanji}}
     </div>
 
-    {{#VocabDef}}<div class="definitions">{{furigana:VocabDef}}</div>{{/VocabDef}}
+    {{#VocabDef}}<div class="definitions">{{kanji:VocabDef}}</div>{{/VocabDef}}
 
     {{#Notes}}
     <div class="notes">
@@ -27,5 +30,7 @@
 </div>
 
 <div class="src" hidden>
+    <span id="src-pitchnum">{{VocabPitchNum}}</span>
+    <span id="src-kana">{{kana:VocabFurigana}}</span>
     <span id="src-word">{{#VocabKanji}}{{text:kanji:VocabKanji}}{{/VocabKanji}}{{^VocabKanji}}{{text:kana:VocabFurigana}}{{/VocabKanji}}</span>
 </div>

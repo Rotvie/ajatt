@@ -23,7 +23,10 @@ Exact formats: [`../../reference/fields.md`](../../reference/fields.md).
 line, `【word】`, the definition, images and dictionary links.
 
 **Production** — gated on `MakeProductionCard`, so it generates nothing until you fill that
-field. Front hides the target word behind its kana shape; back shows stroke order.
+field. Practises recalling the word from its meaning, for speaking: the front shows the
+sentence with the target word blanked as `【＿＿＿】` plus one short sense from `VocabDef` as
+the cue (the sense bolded at mining time if any, with the word and its reading blanked), and
+no audio. Say the whole sentence aloud, then the back plays the audio and shows the pitch.
 
 ## Pitch accent colouring
 

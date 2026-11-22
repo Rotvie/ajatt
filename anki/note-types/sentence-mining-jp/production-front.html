@@ -6,12 +6,13 @@
 
     <div class="sent-center">
         <div class="jpsentence production" lang="ja">{{furigana:SentFurigana}}</div>
-        <div class="audio">{{VocabAudio}}{{SentAudio}}</div>
+        <div class="hint" id="hint" lang="ja"></div>
     </div>
 </div>
 
 <div class="src" hidden>
-    <span id="src-pitchnum">{{VocabPitchNum}}</span>
-    <span id="src-kana">{{kana:VocabFurigana}}</span>
+    <span id="src-def">{{kanji:VocabDef}}</span>
+    <span id="src-hide-word">{{text:kanji:VocabKanji}}</span>
+    <span id="src-hide-kana">{{text:kana:VocabFurigana}}</span>
 </div>
 {{/SentKanji}}{{/MakeProductionCard}}

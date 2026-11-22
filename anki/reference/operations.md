@@ -5,14 +5,16 @@
 - Anki profile: whatever `getActiveProfile` returns. Check it before writing, so a
   script never edits the wrong collection.
 - Deck and note type: both named **Sentence Mining JP**; one deck, no subdecks
-- One card per note (Recognition). Production is gated and generates nothing by default
+- Every note has a Recognition card. Production is gated on `MakeProductionCard` (`y`);
+  it is set on a hand-picked subset of mature, common words (JPDB rank ≤ 10k), not on all notes
 - Check which add-ons are installed before assuming a field is auto-generated.
   If there is no pitch-accent or furigana add-on, anything that looks auto-filled
   was done by hand or by a script.
 
 ## Invariant worth checking
 
-**Cards must equal notes.** If a template edit changes the count, the
+**Card count must not change on a template edit.** Cards = notes + notes with
+`MakeProductionCard` set. If a template edit changes the count, the
 `{{#MakeProductionCard}}` gate on the Production front was broken and Anki has generated
 a second card per note. Check before and after every template write:
 

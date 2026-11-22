@@ -13,3 +13,6 @@ __pycache__/
 # fetched data
 anki/data/*
 !anki/data/README.md
+
+# field/template snapshots written by anki/scripts/snapshot.py
+backup/
